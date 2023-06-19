@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Main Style
+$header_color: #F3A738;
+$footer_color: #FF9000;
+$black: #292929;
+$cream: #FFF6E8;
+$brown: #874900;
+
+@mixin main-button {
+    background-color: $black;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+@mixin button_hover {
+    background-color: #5F5F5F;
+}
+
+// Global
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    @include main-button;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.button:hover {
+    @include main-button_hover;
+}
+
+// Header
+.logo-wrapper {
+
+    img {
+        object-fit: contain;
+    }
+
+}
