@@ -30,4 +30,17 @@ img {
 .button a {
   color: #fff;
   text-decoration: none;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3A738;
+}
+.header-div .logo-wrapper {
+  width: 5%;
+}
+.header-div .logo-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=styles.css.map */
