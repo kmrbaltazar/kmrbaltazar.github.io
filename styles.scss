@@ -17,10 +17,15 @@ $brown: #874900;
     height: 50px;
     display: flex;
     align-items: center;
+    padding: 0 20px 0 20px;
 }
 
 @mixin button_hover {
     background-color: #5F5F5F;
+}
+
+@mixin white_text {
+    color: #fff;
 }
 
 // Global
@@ -41,23 +46,20 @@ img {
     height: 100%;
 }
 
-.button {
-    @include main-button;
-
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.button:hover {
-    @include main-button_hover;
-}
-
+// Header
 .header-div {
     display: flex;
     justify-content: space-between;
     background-color: $header_color;
+    padding: 1.5% 3%;
+    align-items: center;
+    font-size: 18px;
+    height: 90px;
 
     .logo-wrapper {
         width: 5%;
@@ -66,11 +68,54 @@ img {
             object-fit: contain;
         }
     }
-
-    .header-menu {
-        display: flex;
-    }
-
 }
 
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
 
+    a {
+        color: #292929;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .header-menu-item:last-child {
+        @include main-button;
+
+        a {
+            @include white_text;
+        }
+    }
+}
+
+.nav-link{
+    transition: 0.3s ease-out;
+}
+  
+.nav-link:hover{
+    color: dodgerblue;
+}
+  
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+  
+.bar{
+    display: block;
+    width: 45px;
+    height: 4px;
+    margin: 9px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #292929;
+    border-radius: 10px;
+}
+
+// Media query
+@import './media';

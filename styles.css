@@ -16,7 +16,41 @@ img {
   height: 100%;
 }
 
-.button {
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3A738;
+  padding: 1.5% 3%;
+  align-items: center;
+  font-size: 18px;
+  height: 90px;
+}
+.header-div .logo-wrapper {
+  width: 5%;
+}
+.header-div .logo-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.header-menu a {
+  color: #292929;
+}
+.header-menu a:hover {
+  text-decoration: underline;
+}
+.header-menu .header-menu-item:last-child {
   background-color: #292929;
   color: #fff;
   text-decoration: none;
@@ -26,21 +60,75 @@ img {
   height: 50px;
   display: flex;
   align-items: center;
+  padding: 0 20px 0 20px;
 }
-.button a {
+.header-menu .header-menu-item:last-child a {
   color: #fff;
-  text-decoration: none;
 }
 
-.header-div {
-  display: flex;
-  justify-content: space-between;
-  background-color: #F3A738;
+.nav-link {
+  transition: 0.3s ease-out;
 }
-.header-div .logo-wrapper {
-  width: 5%;
+
+.nav-link:hover {
+  color: dodgerblue;
 }
-.header-div .logo-wrapper img {
-  -o-object-fit: contain;
-     object-fit: contain;
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 45px;
+  height: 4px;
+  margin: 9px auto;
+  transition: all 0.3s ease;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+@media (max-width: 62em) {
+  .logo-wrapper {
+    width: 12% !important;
+  }
+}
+@media (max-width: 32em) {
+  .logo-wrapper {
+    width: 25% !important;
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    bottom: 0;
+    gap: 60px;
+    flex-direction: column;
+    background-color: #FFF6E8;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 40px;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
