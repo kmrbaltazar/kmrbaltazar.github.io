@@ -71,7 +71,11 @@ a:visited {
     padding: 1.5% 3%;
     align-items: center;
     font-size: 18px;
-    height: 90px;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    width: 100%;
 }
 
 .logo-wrapper {
@@ -143,6 +147,7 @@ footer {
     justify-content: space-between;
     background-color: $footer_color;
     padding: 1.5% 3%;
+    align-items: center;
 
     .footer-contact-container {
         background-color: $black;
@@ -170,6 +175,60 @@ footer {
         }
     }
 }
+
+// Index / Home Page
+.home-landing {
+    height: 100vh;
+    background-image: url("./Assets/landing-bg.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+    .home-landing-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 18vh auto 0 auto;
+        text-align: center;
+        width: 90vw;
+        align-items: center;
+        gap: 30px;
+     
+         .button {
+             @include main-button;
+             width: 250px;
+             justify-content: center;
+             font-size: 18px;
+         }
+     
+         .button:hover {
+             @include button_hover;
+         }
+     
+         h1 {
+             font-size: 52px;
+             margin: 0;
+         }
+     
+         h4 {
+             margin: 0;
+             font-size: 20px;
+         }
+     
+     }
+
+     .home-landing-image-container {
+        position: absolute;
+        bottom: 0;
+        margin-top: auto;
+     }
+}
+
+
 
 // Media query
 @import './media';

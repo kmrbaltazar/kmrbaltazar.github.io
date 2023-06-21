@@ -38,7 +38,11 @@ a:visited {
   padding: 1.5% 3%;
   align-items: center;
   font-size: 18px;
-  height: 90px;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  width: 100%;
 }
 
 .logo-wrapper {
@@ -112,6 +116,7 @@ footer {
   justify-content: space-between;
   background-color: #FF9000;
   padding: 1.5% 3%;
+  align-items: center;
 }
 footer .footer-contact-container {
   background-color: #000;
@@ -135,9 +140,73 @@ footer .footer-socials .social-icon-wrapper a:hover {
   color: #5b3907;
 }
 
+.home-landing {
+  height: 100vh;
+  background-image: url("./Assets/landing-bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.home-landing .home-landing-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 18vh auto 0 auto;
+  text-align: center;
+  width: 90vw;
+  align-items: center;
+  gap: 30px;
+}
+.home-landing .home-landing-text .button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  width: 250px;
+  justify-content: center;
+  font-size: 18px;
+}
+.home-landing .home-landing-text .button:hover {
+  background-color: #5b3907;
+  transition: 0.3s ease-out;
+}
+.home-landing .home-landing-text h1 {
+  font-size: 52px;
+  margin: 0;
+}
+.home-landing .home-landing-text h4 {
+  margin: 0;
+  font-size: 20px;
+}
+.home-landing .home-landing-image-container {
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+}
+
+@media (max-width: 64em) {
+  .logo-wrapper {
+    width: 12% !important;
+  }
+  .home-landing .home-landing-text {
+    margin: 25vh auto 0 auto;
+  }
+}
 @media (max-width: 62em) {
   .logo-wrapper {
     width: 12% !important;
+  }
+  .home-landing .home-landing-text {
+    margin: 22vh auto 0 auto;
   }
 }
 @media (max-width: 32em) {
@@ -173,6 +242,7 @@ footer .footer-socials .social-icon-wrapper a:hover {
     text-align: center;
     transition: 0.3s;
     padding: 40px;
+    z-index: 100;
   }
   .nav-item {
     margin: 16px 0;
@@ -184,5 +254,14 @@ footer .footer-socials .social-icon-wrapper a:hover {
     flex-direction: column;
     gap: 40px;
     padding: 4%;
+  }
+  .home-landing .home-landing-text {
+    margin: 20vh auto 0 auto;
+  }
+  .home-landing .home-landing-text h1 {
+    font-size: 38px;
+  }
+  .home-landing .home-landing-text h4 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */
