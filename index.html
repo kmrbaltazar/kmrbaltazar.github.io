@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./Scripts/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/71542bc9b3.js" crossorigin="anonymous"></script>
     <title>Tin Baltazar - Portfolio</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
         <div class="header-div">
-            <div class="logo-wrapper">
-                <img src="./Assets/Tin Header.png" alt="Tin Baltazar Portfolio logo">
+          <div class="logo-wrapper">
+            <img
+              src="./Assets/Tin Header.png"
+              alt="Tin Baltazar Portfolio logo"
+            />
+          </div>
+          <nav class="navbar">
+            <ul class="header-menu nav-menu" id="nav-menu">
+              <li class="header-menu-item">
+                <a href="#" class="nav-link">Portfolio</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="nav-link">Contact me</a>
+              </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-            <nav class="navbar">
-                <ul class="header-menu nav-menu">
-                    <li class="header-menu-item"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="header-menu-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="header-menu-item"><a href="#" class="nav-link">Contact me</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                  </div>
-            </nav>
+          </nav>
         </div>
-    </header>
-
-
-</body>
+      </header>
+      <main></main>
+      <footer>
+        <div class="logo-wrapper">
+            <img
+              src="./Assets/Tin Footer.png"
+              alt="Tin Baltazar Portfolio Footer logo"
+            />
+        </div>
+        <div class="footer-contact-container">
+            <p>Need help with a website? Contact me!
+            </p>
+            <p>+64 21 027 84026</p>
+            <p>kmrbaltazar@gmail.com</p>
+        </div>
+        <div class="footer-socials">
+            <p>Website by Tin Baltazar</p>
+            <div class="social-icon-wrapper">
+                <a href="https://www.linkedin.com/in/tinbaltazar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kmrbaltazar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kmrbaltazar@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

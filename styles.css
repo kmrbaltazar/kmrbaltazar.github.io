@@ -11,6 +11,12 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+.body-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -19,6 +25,10 @@ img {
 a {
   text-decoration: none;
   font-weight: 700;
+}
+
+a:visited {
+  color: #000;
 }
 
 .header-div {
@@ -30,10 +40,11 @@ a {
   font-size: 18px;
   height: 90px;
 }
-.header-div .logo-wrapper {
+
+.logo-wrapper {
   width: 5%;
 }
-.header-div .logo-wrapper img {
+.logo-wrapper img {
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -51,7 +62,7 @@ a {
   text-decoration: underline;
 }
 .header-menu .header-menu-item:last-child {
-  background-color: #292929;
+  background-color: #000;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -65,13 +76,20 @@ a {
 .header-menu .header-menu-item:last-child a {
   color: #fff;
 }
+.header-menu .header-menu-item:last-child:hover {
+  background-color: #5b3907;
+  transition: 0.3s ease-out;
+}
+.header-menu .header-menu-item:last-child:hover a:hover {
+  text-decoration: none;
+}
 
 .nav-link {
   transition: 0.3s ease-out;
 }
 
 .nav-link:hover {
-  color: dodgerblue;
+  color: #fff;
 }
 
 .hamburger {
@@ -85,8 +103,36 @@ a {
   height: 4px;
   margin: 9px auto;
   transition: all 0.3s ease;
-  background-color: #292929;
+  background-color: #000;
   border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF9000;
+  padding: 1.5% 3%;
+}
+footer .footer-contact-container {
+  background-color: #000;
+  color: #FF9000;
+  padding: 20px 25px;
+}
+footer .footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-socials .social-icon-wrapper {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+footer .footer-socials .social-icon-wrapper a {
+  color: #000;
+}
+footer .footer-socials .social-icon-wrapper a:hover {
+  color: #5b3907;
 }
 
 @media (max-width: 62em) {
@@ -95,6 +141,9 @@ a {
   }
 }
 @media (max-width: 32em) {
+  .header-div {
+    padding: 4%;
+  }
   .logo-wrapper {
     width: 25% !important;
     display: flex;
@@ -130,5 +179,10 @@ a {
   }
   .nav-menu.active {
     left: 0;
+  }
+  footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 4%;
   }
 }/*# sourceMappingURL=styles.css.map */

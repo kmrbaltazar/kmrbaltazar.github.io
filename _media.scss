@@ -5,6 +5,12 @@
 }
 
 @media (max-width: 32em) {
+
+    // Header
+    .header-div {
+        padding: 4%;
+    }
+
   .logo-wrapper {
     width: 25% !important;
     display: flex;
@@ -47,4 +53,11 @@
   .nav-menu.active {
     left: 0;
   }
+
+//   Footer
+footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 4%;
+}
 }

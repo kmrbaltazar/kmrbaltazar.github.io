@@ -3,9 +3,10 @@
 // Main Style
 $header_color: #F3A738;
 $footer_color: #FF9000;
-$black: #292929;
+$black: #000;
 $cream: #FFF6E8;
 $brown: #874900;
+$btn_hover:  #5b3907;
 
 @mixin main-button {
     background-color: $black;
@@ -21,7 +22,8 @@ $brown: #874900;
 }
 
 @mixin button_hover {
-    background-color: #5F5F5F;
+    background-color: #5b3907;
+    transition: 0.3s ease-out;
 }
 
 @mixin white_text {
@@ -41,6 +43,12 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+.body-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -49,6 +57,10 @@ img {
 a {
     text-decoration: none;
     font-weight: 700;
+}
+
+a:visited {
+    color: $black;
 }
 
 // Header
@@ -60,13 +72,13 @@ a {
     align-items: center;
     font-size: 18px;
     height: 90px;
+}
 
-    .logo-wrapper {
-        width: 5%;
+.logo-wrapper {
+    width: 5%;
 
-        img {
-            object-fit: contain;
-        }
+    img {
+        object-fit: contain;
     }
 }
 
@@ -91,6 +103,14 @@ a {
             @include white_text;
         }
     }
+
+    .header-menu-item:last-child:hover {
+        @include button_hover;
+        
+        a:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .nav-link{
@@ -98,7 +118,7 @@ a {
 }
   
 .nav-link:hover{
-    color: dodgerblue;
+    color: #fff;
 }
   
 .hamburger{
@@ -113,8 +133,42 @@ a {
     margin: 9px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: #292929;
+    background-color:$black;
     border-radius: 10px;
+}
+
+// Footer 
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $footer_color;
+    padding: 1.5% 3%;
+
+    .footer-contact-container {
+        background-color: $black;
+        color: $footer_color;
+        padding: 20px 25px;
+    }
+
+    .footer-socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .social-icon-wrapper {
+            display: flex;
+            gap: 20px;
+            font-size: 30px;
+
+            a {
+                color: $black;
+            }
+
+            a:hover {
+                color: $btn_hover;
+            }
+        }
+    }
 }
 
 // Media query
