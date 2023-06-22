@@ -282,25 +282,6 @@ footer .footer-socials .social-icon-wrapper a:hover {
   background-color: #5b3907;
   transition: 0.3s ease-out;
 }
-.portfolio-section .project-card .project-text-wrapper .project-buttons-div .button-secondary {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 10px;
-  width: auto;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px 0 20px;
-  justify-content: center;
-}
-.portfolio-section .project-card .project-text-wrapper .project-buttons-div .button-secondary:hover {
-  border: 1px solid #80581d;
-  color: #80581d;
-  transition: 0.3s ease-out;
-}
 
 .about-section {
   margin: 12vh auto 8vh auto;
@@ -483,6 +464,86 @@ button {
 button:hover {
   background-color: #5b3907;
   transition: 0.3s ease-out;
+}
+
+.project-top-section {
+  margin: 12vh 0 0 0;
+  padding: 40px 0 60px 0;
+}
+.project-top-section h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.project-top-section .project-photo-bg-wrapper {
+  height: auto;
+  padding: 30px 0;
+  background-color: #e7e7e7;
+}
+.project-top-section .project-photo-bg-wrapper .project-main-img-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+.project-top-section .project-link-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.project-top-section .project-link-group div {
+  flex: 1;
+}
+.project-top-section .project-link-group .button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+}
+.project-top-section .project-link-group .button:hover {
+  background-color: #5b3907;
+  transition: 0.3s ease-out;
+}
+.project-top-section .project-link-group .button-secondary {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+}
+.project-top-section .project-link-group .button-secondary:hover {
+  border: 1px solid #874900;
+  color: #874900;
+  transition: 0.3s ease-out;
+}
+
+.project-overall-section {
+  width: 70%;
+  margin: 0px auto 80px auto;
+}
+.project-overall-section h3 {
+  font-size: 30px;
+}
+.project-overall-section .project-paragraph-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 64em) {
