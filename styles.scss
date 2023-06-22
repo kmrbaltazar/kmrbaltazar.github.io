@@ -396,8 +396,61 @@ footer {
             }
         }
     }
+}
 
+.about-skillset-bg-container {
+    background-color: $cream;
+    padding: 60px 0 90px;
+}
 
+.about-skillset-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 80%;
+    margin: 0 auto;
+
+    .about-child {
+        
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 32px;
+            color: $black;
+            text-align: center;
+            text-decoration: overline;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        i {
+            font-size: 50px;
+        }
+
+        .skill-item {
+            color: $brown;
+        }
+
+    }
+
+    .skill-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+        grid-auto-rows: minmax(140px,auto);
+        place-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .about-child:first-child {
+        text-align: center;
+    }
 }
 
 
