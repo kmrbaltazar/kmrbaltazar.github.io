@@ -9,6 +9,11 @@
             margin: 25vh auto 0 auto;
         }
     }
+
+    .about-section {
+        width: 90%;
+        
+    }
     
 }
 
@@ -72,14 +77,10 @@
     transform: translateY(-13px) rotate(-45deg);
   }
 
-//   .navbar {
-//     position: relative;
-//   }
-
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 12vh;
     bottom: 0;
     gap: 60px;
     flex-direction: column;
@@ -103,7 +104,7 @@
 footer {
     flex-direction: column;
     gap: 40px;
-    padding: 4%;
+    padding: 6% 4%;
     align-items: start;
 }
 
@@ -125,6 +126,18 @@ footer {
     .portfolio-grid {
         grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
     }
+}
+
+.about-section {
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+
+        .about-tin-description {
+            gap: 30px;
+        }
+    }
+    
 }
 
 }
