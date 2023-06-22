@@ -590,11 +590,28 @@ footer {
         flex-direction: column;
         gap: 20px;
         margin-bottom: 40px;
+
+        .sidebyside-imgs-wrapper {
+            display: flex;
+            gap: 20px;
+
+            .max-two-img-child {
+                flex: 1;
+                background-color: #fff;
+                border: 1px solid grey;
+            }
+        }
+
+        .single-img-wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 }
 
 
-
+// Carousel
+@import './carousel';
 
 // Media query
 @import './media';
