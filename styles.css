@@ -397,6 +397,94 @@ footer .footer-socials .social-icon-wrapper a:hover {
   text-align: center;
 }
 
+.contact-section {
+  margin: 12vh 0 0 0;
+  padding: 40px 0 60px 0;
+}
+.contact-section h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-section h3 {
+  font-size: 35px;
+  text-decoration: overline;
+  color: #874900;
+  margin-bottom: 30px;
+}
+.contact-section .contact-section-container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  gap: 60px;
+}
+.contact-section .contact-section-container .contact-child {
+  flex: 1;
+}
+
+.contact-form-container {
+  flex: 1;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #bababa;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bababa;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #EEA243;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  width: 150px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5b3907;
+  transition: 0.3s ease-out;
+}
+
 @media (max-width: 64em) {
   .logo-wrapper {
     width: 12% !important;
@@ -406,6 +494,9 @@ footer .footer-socials .social-icon-wrapper a:hover {
   }
   .about-section {
     width: 90%;
+  }
+  .contact-section .contact-section-container {
+    width: 80%;
   }
 }
 @media (max-width: 62em) {
@@ -423,6 +514,9 @@ footer .footer-socials .social-icon-wrapper a:hover {
   }
   .portfolio-section .project-card .project-text-wrapper h3 {
     font-size: 24px;
+  }
+  .contact-section .contact-section-container {
+    width: 85%;
   }
 }
 @media (max-width: 32em) {
@@ -490,5 +584,33 @@ footer .footer-socials .social-icon-wrapper a:hover {
   }
   .about-section .about-container .about-tin-description {
     gap: 30px;
+  }
+  .contact-section {
+    margin: 12vh 0 0 0;
+    padding: 40px 0 60px 0;
+  }
+  .contact-section h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contact-section h3 {
+    font-size: 35px;
+    text-decoration: overline;
+    color: #874900;
+    margin-bottom: 30px;
+  }
+  .contact-section p {
+    text-align: justify;
+  }
+  .contact-section .contact-section-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  .contact-section .contact-section-container .contact-child {
+    flex: 1;
   }
 }/*# sourceMappingURL=styles.css.map */
