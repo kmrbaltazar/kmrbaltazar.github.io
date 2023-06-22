@@ -20,6 +20,8 @@ body {
 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -49,8 +51,8 @@ a:visited {
   width: 5%;
 }
 .logo-wrapper img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 
 .header-menu {
@@ -290,6 +292,57 @@ footer .footer-socials .social-icon-wrapper a:hover {
 .portfolio-section .project-card .project-text-wrapper .project-buttons-div .button-secondary:hover {
   border: 1px solid #80581d;
   color: #80581d;
+  transition: 0.3s ease-out;
+}
+
+.about-section {
+  margin: 12vh auto 8vh auto;
+  width: 60%;
+  padding-top: 40px;
+}
+.about-section h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-section .about-container {
+  display: flex;
+  gap: 40px;
+}
+.about-section .about-container .about-tin-img-wrapper {
+  flex: 1;
+  height: 400px;
+}
+.about-section .about-container .about-tin-img-wrapper img {
+  border-radius: 10px;
+}
+.about-section .about-container .about-tin-description {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-section .about-container .about-tin-description .about-tin-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-section .about-container .about-tin-description .button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: center;
+  width: 200px;
+}
+.about-section .about-container .about-tin-description .button:hover {
+  background-color: #5b3907;
   transition: 0.3s ease-out;
 }
 
