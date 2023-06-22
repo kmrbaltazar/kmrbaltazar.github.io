@@ -473,6 +473,11 @@ button:hover {
 .project-top-section h2 {
   font-size: 50px;
   text-align: center;
+}
+.project-top-section h4, .project-top-section h5 {
+  text-align: center;
+}
+.project-top-section h5 {
   margin-bottom: 50px;
 }
 .project-top-section .project-photo-bg-wrapper {
@@ -596,7 +601,6 @@ button:hover {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -606,15 +610,6 @@ button:hover {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -660,6 +655,32 @@ button:hover {
   .contact-section .contact-section-container {
     width: 80%;
   }
+  .project-overall-section {
+    width: 85%;
+    margin: 0px auto 80px auto;
+  }
+  .project-overall-section h3 {
+    font-size: 26px;
+  }
+  .project-overall-section .project-paragraph-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .project-overall-section .project-paragraph-group .sidebyside-imgs-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .project-overall-section .project-paragraph-group .sidebyside-imgs-wrapper .max-two-img-child {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid grey;
+  }
+  .project-overall-section .project-paragraph-group .single-img-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 62em) {
   .logo-wrapper {
@@ -679,6 +700,14 @@ button:hover {
   }
   .contact-section .contact-section-container {
     width: 85%;
+  }
+  .project-top-section .project-link-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 }
 @media (max-width: 32em) {
@@ -774,5 +803,47 @@ button:hover {
   }
   .contact-section .contact-section-container .contact-child {
     flex: 1;
+  }
+  .project-top-section h2 {
+    font-size: 30px;
+  }
+  .project-top-section h5 {
+    margin-bottom: 30px;
+  }
+  .project-top-section .project-photo-bg-wrapper .project-main-img-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project-top-section .project-link-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .project-overall-section {
+    width: 90%;
+  }
+  .project-overall-section h3 {
+    font-size: 24px;
+  }
+  .project-overall-section .project-paragraph-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .project-overall-section .project-paragraph-group .sidebyside-imgs-wrapper {
+    flex-direction: column;
+  }
+  .project-overall-section .project-paragraph-group .sidebyside-imgs-wrapper .max-two-img-child {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid grey;
+  }
+  .project-overall-section .project-paragraph-group .single-img-wrapper {
+    width: 90%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=styles.css.map */
