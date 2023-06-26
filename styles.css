@@ -839,7 +839,6 @@ button:hover {
   .project-overall-section .project-paragraph-group .sidebyside-imgs-wrapper .max-two-img-child {
     flex: 1;
     background-color: #fff;
-    border: 1px solid grey;
   }
   .project-overall-section .project-paragraph-group .single-img-wrapper {
     width: 90%;
