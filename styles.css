@@ -641,6 +641,12 @@ button:hover {
     opacity: 1;
   }
 }
+@media (min-width: 120em) {
+  .skill-grid-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 64em) {
   .logo-wrapper {
     width: 12% !important;
