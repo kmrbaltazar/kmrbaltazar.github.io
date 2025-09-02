@@ -297,6 +297,16 @@ footer {
             }
         }
 
+        .anzx-image {
+            background-color: #006bde;
+            border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+
+                img {
+                    object-fit: contain;
+                }
+        }
+
         .project-text-wrapper {
             display: flex;
             flex-direction: column;
@@ -581,6 +591,13 @@ footer {
         .button-secondary:hover {
             @include second_button_hover;
         }
+
+        .caption {
+            font-size: 12px;
+            color: gray;
+            font-weight: 400;
+            font-style: italic;
+        }
     }
 }
 
@@ -611,6 +628,10 @@ footer {
         .single-img-wrapper {
             width: 80%;
             margin: 0 auto;
+        }
+
+        ul {
+            padding-left: 32px;
         }
     }
 }

@@ -239,6 +239,15 @@ footer .footer-socials .social-icon-wrapper a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.portfolio-section .project-card .anzx-image {
+  background-color: #006bde;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.portfolio-section .project-card .anzx-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .portfolio-section .project-card .project-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -536,6 +545,12 @@ button:hover {
   color: #874900;
   transition: 0.3s ease-out;
 }
+.project-top-section .project-link-group .caption {
+  font-size: 12px;
+  color: gray;
+  font-weight: 400;
+  font-style: italic;
+}
 
 .project-overall-section {
   width: 70%;
@@ -561,6 +576,9 @@ button:hover {
 .project-overall-section .project-paragraph-group .single-img-wrapper {
   width: 80%;
   margin: 0 auto;
+}
+.project-overall-section .project-paragraph-group ul {
+  padding-left: 32px;
 }
 
 /* Slideshow container */
